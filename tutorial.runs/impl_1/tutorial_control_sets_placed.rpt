@@ -1,0 +1,88 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Fri May 05 18:49:35 2017
+| Host         : DongSky-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file tutorial_control_sets_placed.rpt
+| Design       : tutorial
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    17 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |              40 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              39 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------+------------------+------------------+----------------+
+|  Clock Signal  |        Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+-----------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | cnt0                        | CB_i_1_n_0       |                1 |              1 |
+|  clk_IBUF_BUFG | cnt0                        | CC_i_1_n_0       |                1 |              2 |
+|  clk_IBUF_BUFG | cnt0                        | CA_i_1_n_0       |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_0_0_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_10_10_i_2_n_0 |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_11_11_i_2_n_0 |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_12_12_i_2_n_0 |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_13_13_i_2_n_0 |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_14_14_i_2_n_0 |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_15_15_i_2_n_0 |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_1_1_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_2_2_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_3_3_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_4_4_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_5_5_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_6_6_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_7_7_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_8_8_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | sram_reg_0_63_9_9_i_2_n_0   |                  |                1 |              4 |
+|  clk_IBUF_BUFG | p_2_in                      |                  |                5 |              8 |
+|  clk_IBUF_BUFG |                             | cnt0             |                8 |             32 |
+|  clk_IBUF_BUFG | cnt0                        |                  |               10 |             32 |
+|  clk_IBUF_BUFG | cnt0                        | print_cur_id     |                8 |             32 |
+|  clk_IBUF_BUFG | addr_reg_0_7_0_1_i_1_n_0    |                  |               23 |            120 |
++----------------+-----------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 4      |                    17 |
+| 8      |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+
